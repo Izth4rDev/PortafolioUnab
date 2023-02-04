@@ -1,0 +1,180 @@
+@font-face {
+    font-family:'Roboto';
+    src: url('/Fonts/Roboto/Roboto-MediumItalic.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+.menu{
+    
+    background-color: rgb(241,251,248);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.link-nav{
+
+    color:rgba(15,76,129,1);
+    font-weight: 700;
+    text-decoration: none;
+
+}
+
+.menu-nav{
+
+    display: flex;
+    list-style: none;
+
+    /*border:solid blue 0.1rem;*/
+    padding: 0;
+    /*margin:0 1rem 0 0;*/
+
+
+}
+
+.nav-menu{
+
+    margin:0 1rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+
+}
+
+.link-nav:hover{
+
+    color:rgb(0,180,200);
+    border-bottom:solid 0.2rem rgb(0,180,200);
+
+}
+
+.amburguesa{
+
+    color:rgba(15,76,129,1);
+    background: none;
+    border:none;
+    font-size: 1.6rem;
+    display: none;
+
+
+}
+
+.font-parrafo{
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+
+}
+
+.font-titulo2{
+
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.8rem;
+
+}
+
+.star{
+
+    cursor: pointer;
+    margin: 0rem 1rem;
+
+}
+
+@media (max-width:768px){
+
+    body{
+
+        font-family: sans-serif;
+    
+    }
+    
+    .cabecera{
+    
+        background-color: rgba(241,251,248,0.8);
+    
+    }
+    
+    .logo-image{
+
+        max-width: 70%;
+
+    }
+
+    .menu{
+    
+        display: flex;
+        position: fixed;
+        justify-content: space-around;
+        align-items: center;
+    
+    }
+    
+    .link-nav{
+    
+        color:rgba(15,76,129,1);
+        font-weight: 700;
+        text-decoration: none;
+    
+    }
+    
+    .menu-nav{
+    
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 0;
+        position:fixed;
+        top:79.8px;
+        width: 100%;
+        background-color: rgba(241, 251, 248, 0.5);
+        align-items: center;
+
+        /*Modo mobil*/
+        left:100%;
+        transition:left 0.5s;
+
+    }
+    .menu-nav:hover{
+
+        background-color: rgba(241, 251, 248, 1);
+    }
+    
+    .nav-menu{
+    
+        margin:1rem 0;
+        font-size: 1rem;
+        text-transform: uppercase;
+    
+    }
+    
+    .link-nav:hover{
+    
+        color:rgb(0,180,200);
+        border-bottom:none;
+    
+    }
+    
+    .amburguesa{
+    
+        color:rgba(15,76,129,1);
+        background: none;
+        border:none;
+        font-size: 1.6rem;
+        display: block;
+    
+    }
+
+    .amburguesa:hover{
+
+        cursor: pointer;
+        
+    }
+    
+    .menu-nav_visible{
+
+        left:0;
+
+    }
+
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/raw.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>App Crosswind </title>
+</head>
+<body>
+
+    <!--Star container-->
+    <div class="container-fluid">
+    
+        <!--Header-Navbar-->
+        <div class="row cabecera">
+            <nav class="menu py-2 text-center">
+                <a href="#"><img src="/img/logo-transparent.png" alt="imagen no encontrada" class="logo-image"></a>
+            </nav>
+        </div>
+     
+        <!--Main section Star-->
+        
+        <div class="row mt-8 justify-content-center">
+        <div class="col-8">
+        <form class="text-primario">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" aria-describedby="nombreformulario">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo</label>
+                <input type="email" class="form-control" id="email">
+                <div id="emailHelp" class="form-text">Los datos son exclusivos, no compartiremos tu información.</div>
+            </div>
+            <div class="mb-3">
+                <label for="Comuna" class="form-label">Comuna</label>
+                <input type="text" class="form-control" id="comuna" aria-describedby="comunaFormulario">
+            </div>
+            <div class="mb-3 col-3">
+                <label for="numero" class="form-label">Numero de integrantes de su hogar</label>
+                <input type="number" name="numero" id="numero" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="" id="label1">¿Qué tan agradable es su hogar en verano?</label>
+
+                <div class="col-12 d-flex" id="star-rating-ver">
+                    <div class="star star-ver text-letra fs-2 border-0 bg-transparent">&#9734;</div>
+                    <div class="star star-ver text-letra fs-2 border-0 bg-transparent">&#9734;</div>
+                    <div class="star star-ver text-letra fs-2 border-0 bg-transparent">&#9734;</div>
+                    <div class="star star-ver text-letra fs-2 border-0 bg-transparent">&#9734;</div>
+                    <div class="star star-ver text-letra fs-2 border-0 bg-transparent">&#9734;</div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="">¿Qué tan agradable es su hogar en invierno?</label>
+                <div class="star_rating-inv col-12 d-flex" id="star-rating-inv">
+                    <div class="star star-inv text-letra fs-2 border-0 bg-transparent">&#9734;</div>
+                    <div class="star star-inv text-letra fs-2 border-0 bg-transparent">&#9734;</div>
+                    <div class="star star-inv text-letra fs-2 border-0 bg-transparent">&#9734;</div>
+                    <div class="star star-inv text-letra fs-2 border-0 bg-transparent">&#9734;</div>
+                    <div class="star star-inv text-letra fs-2 border-0 bg-transparent">&#9734;</div>
+                </div>
+            </div>
+            <div class="mb-3">
+                ¿Su hogar presenta actualmente signos de humedad?
+                <div class="star_rating-hum col-12 d-flex" id="star-rating-hum">
+                    <div class="star star-hum text-letra fs-2 border-0 bg-transparent">&#9734;</div>
+                    <div class="star star-hum text-letra fs-2 border-0 bg-transparent">&#9734;</div>
+                    <div class="star star-hum text-letra fs-2 border-0 bg-transparent">&#9734;</div>
+                    <div class="star star-hum text-letra fs-2 border-0 bg-transparent">&#9734;</div>
+                    <div class="star star-hum text-letra fs-2 border-0 bg-transparent">&#9734;</div>
+                </div>
+            </div>
+
+            <div class="row align-items-center justify-content-center">
+                <div class="col-4 col-sm-2 offset-sm-1 offset-0 text-center"><button type="submit" class="btn btn-primario disabled"> Atras</button></div>
+                <div class="col-4 col-sm-2 offset-sm-1 offset-0 text-center"><a href="index.html"><img src="/img/casaview.webp" class=" img-fluid border border-1 border-primario rounded-2 p-1" alt=""></a></div>
+                <div class="col-4 col-sm-2 offset-sm-1 offset-0 text-center"><button type="submit" class="btn btn-primario">Siguiente</button></div>
+            </div>
+
+          </form>
+        </div>
+        </div>
+        <!--Main Section End-->
+
+        <!--Section footer-->
+        <div class="row text-center align-items-center mt-7 bg-terciario">
+            <div class="col-12 col-sm-6">
+                <div class="row align-items-center">
+                    <div class="col-12 my-4"><h2 class="font-parrafo text-primario">Síguenos en nuestras redes sociales</h2></div>
+                    <div class="col-4"> <a href="https://www.facebook.com/EmergeVuelveteEficiente"><img src="/img/Facebook.webp" alt=""></a></div>
+                    <div class="col-4"><a href="https://cl.linkedin.com/in/emerge-vuelvete-eficiente"><img src="/img/instagram.webp" alt=""></a></div>
+                    <div class="col-4"><a href="https://www.instagram.com/emerge_vuelveteficiente/"><img src="/img/Linkedin.webp" alt=""></a></div>
+                </div>
+            </div>
+            <div class=" col-12 col-sm-6 text-center bg-light">
+                <div class="row align-items-center border border-4 border-cuaternario">
+                    <div class="col-12 my-4 bg-light align-items-center"><h2 class="font-parrafo text-primario">Nuestros StakeHolders</h2></div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-3"> <a href="#"><img src="/img/datactil2.webp" alt=""></a></div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-3"><a href="#"><img src="/img/crhysalis.png" alt=""></a></div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-3"><a href="#"><img src="/img/redMujeres.webp" alt=""></a></div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-3"><a href="#"><img src="/img/RedPe.png" alt=""></a></div>
+                </div>
+            </div>
+         </div>
+
+         <!--End container-->
+    </div>
+    <script src="/js/star.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/9d55460b02.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
