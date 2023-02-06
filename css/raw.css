@@ -81,6 +81,18 @@
 
 }
 
+#next-button{
+
+    text-decoration: none;
+
+}
+
+.button-form{
+
+    width:8rem;
+
+}
+
 @media (max-width:768px){
 
     body{
@@ -176,5 +188,6 @@
         left:0;
 
     }
+   
 
 }
