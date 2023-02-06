@@ -25,6 +25,15 @@ $primario:      #0C487F;
 $secundario:    #00BBCA;
 $terciario:     #F1FBF8;
 $cuaternario:  #F1FBF8;
+
+$ventana-border:  #F5732E;
+$ventana-background: #F5AF3B;
+$puerta-border: #F52F22;
+$puerta-background: #F55B46;
+$pared-border: #000000;
+$pared-background:#BFBFBF;
+
+
 $primary:       $blue;
 $secondary:     $gray-600;
 $success:       $green;
@@ -41,6 +50,12 @@ $theme-colors: (
 "terciario":  $terciario,
 "cuaternario": $cuaternario, 
 "secundario": $secundario,
+"puerta-border": $puerta-border,
+"puerta-background": $puerta-background,
+"ventana-border": $ventana-border,
+"ventana-background": $ventana-background,
+"pared-border": $pared-border,
+"pared-background": $pared-background, 
 "secondary":  $secondary,
 "success":    $success,
 "info":       $info,

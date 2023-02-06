@@ -5,39 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/draw.css">
+    <link rel="stylesheet" href="/css/raw.css">
     <link rel="stylesheet" href="/css/styles.css">
     <title>Crosswind App</title>
 </head>
 <body>
-    <div class="row cabecera">
-        <nav class="menu py-2 text-center">
-            <a href="index.html"><img src="/img/logo-transparent.png" alt="imagen no encontrada" class="logo-image"></a>
-        </nav>
-    </div>
+    <!--    Cabecera    -->
+    <div class="container-fluid">
+        <div class="row cabecera">
+            <nav class="menu py-2 text-center">
+                <a href="index.html"><img src="/img/logo-transparent.png" alt="imagen no encontrada" class="logo-image"></a>
+            </nav>
+        </div>
 
-    <main class="main-container">
-        <canvas id="main-canvas" width="900" height="600"></canvas>
-    </main>
-
-    <div class="row text-center align-items-center mt-7 bg-terciario">
-        <div class="col-12 col-sm-6">
-            <div class="row align-items-center">
-                <div class="col-12 my-4"><h2 class="font-parrafo text-primario">Síguenos en nuestras redes sociales</h2></div>
-                <div class="col-4"> <a href="https://www.facebook.com/EmergeVuelveteEficiente"><img src="/img/Facebook.webp" alt=""></a></div>
-                <div class="col-4"><a href="https://cl.linkedin.com/in/emerge-vuelvete-eficiente"><img src="/img/instagram.webp" alt=""></a></div>
-                <div class="col-4"><a href="https://www.instagram.com/emerge_vuelveteficiente/"><img src="/img/Linkedin.webp" alt=""></a></div>
+        <!--    Lienzo     -->
+        <div class="bg-secundario text-center align-items-center my-4 py-2 row">
+            <div class="col-12">
+                <canvas id="main-canvas" width="650" height="450"></canvas>    
             </div>
         </div>
-        <div class=" col-12 col-sm-6 text-center bg-light">
-            <div class="row align-items-center border border-4 border-cuaternario">
-                <div class="col-12 my-4 bg-light align-items-center"><h2 class="font-parrafo text-primario">Nuestros StakeHolders</h2></div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-3"> <a href="#"><img src="/img/datactil2.webp" alt=""></a></div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-3"><a href="#"><img src="/img/crhysalis.png" alt=""></a></div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-3"><a href="#"><img src="/img/redMujeres.webp" alt=""></a></div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-3"><a href="#"><img src="/img/RedPe.png" alt=""></a></div>
+
+
+
+        <div class="my-6">
+            <div class="row">
+                <div class="col-12 px-0 text-center">
+                    <h3 class="fs-5 text-primario">Dibuje su casa, indique puertas y ventanas</h3>
+                </div>
+            </div>
+        
+
+            <div class="input-group-text d-flex justify-content-center align-items-center mx-auto mx-lg-8 py-6">
+
+                <div class="d-flex align-items-center mx-5 border border-1 border-pared-border bg-pared-background rounded p-2">
+                    <input class="form-check-input mt-0" id="color-pared" type="radio" name="radio-elemento" value="" aria-label="Radio button for following text input">
+                    <label for="color-pared" class="form-label my-0 ms-3">Pared</label>
+                </div>
+
+                <div class="d-flex align-items-center mx-5 border border-1 border-ventana-border bg-ventana-background rounded p-2">
+                    <input class="form-check-input mt-0" id="color-ventana" type="radio" name="radio-elemento" value="" aria-label="Radio button for following text input">
+                    <label for="color-ventana" class="form-label my-0 ms-3">Ventana</label>
+                </div>
+
+                <div class="d-flex align-items-center mx-5 border border-1 border-puerta-border bg-puerta-background rounded p-2">
+                    <input class="form-check-input mt-0" type="radio" id="color-puerta" name="radio-elemento" value="" aria-label="Radio button for following text input">
+                    <label for="color-puerta" class="form-label my-0 ms-3">Puerta</label>
+                </div>
+
+            </div>
+        </div>  
+
+        <div class="row align-items-center justify-content-center">
+            <div class="col-4 col-sm-2 offset-sm-1 offset-0 text-center mx-0"><a href="/view1.html"><button type="submit" class="btn btn-primario">Atras</button></a></div>
+            <div class="col-4 col-sm-2 offset-sm-1 offset-0 text-center mx-0"><a href="index.html"><img src="/img/casaview.webp" class=" img-fluid border border-1 border-primario rounded-2 p-1" alt=""></a></div>
+            <div class="col-4 col-sm-2 offset-sm-1 offset-0 text-center mx-0"><a href="#" class="text-light" id="next-button"></a><button type="submit" class="btn btn-primario ">Siguiente</button></a></div>
+        </div>
+    
+        <!--    Footer  -->
+
+        <div class="row text-center align-items-center mt-7 bg-terciario">
+            <div class="col-12 col-sm-6">
+                <div class="row align-items-center">
+                    <div class="col-12 my-4"><h2 class="font-parrafo text-primario">Síguenos en nuestras redes sociales</h2></div>
+                    <div class="col-4"> <a href="https://www.facebook.com/EmergeVuelveteEficiente"><img src="/img/Facebook.webp" alt=""></a></div>
+                    <div class="col-4"><a href="https://cl.linkedin.com/in/emerge-vuelvete-eficiente"><img src="/img/instagram.webp" alt=""></a></div>
+                    <div class="col-4"><a href="https://www.instagram.com/emerge_vuelveteficiente/"><img src="/img/Linkedin.webp" alt=""></a></div>
+                </div>
+            </div>
+
+            <div class=" col-12 col-sm-6 text-center bg-light">
+                <div class="row align-items-center border border-4 border-cuaternario">
+                    <div class="col-12 my-4 bg-light align-items-center"><h2 class="font-parrafo text-primario">Nuestros StakeHolders</h2></div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-3"> <a href="#"><img src="/img/datactil2.webp" alt=""></a></div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-3"><a href="#"><img src="/img/crhysalis.png" alt=""></a></div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-3"><a href="#"><img src="/img/redMujeres.webp" alt=""></a></div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-3"><a href="#"><img src="/img/RedPe.png" alt=""></a></div>
+                </div>
             </div>
         </div>
-     </div>
+    </div>      
 <script src="/js/draw.js"></script>
+<script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 
 const menu = document.querySelector('.menu-nav');
-const amburguesa = document.querySelector('.amburguesa');
+const amburguesa = document.querySelector('.hamburguesa');
 
 
 amburguesa.addEventListener('click', ()=> {
